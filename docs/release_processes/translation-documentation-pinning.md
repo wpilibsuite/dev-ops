@@ -15,7 +15,7 @@ Translations happen consistently throughout the year, as long as there is docume
 Reference: ``/latest/`` is the "leading edge" branch of the docs. Accessible from [https://docs.wpilib.org/en/latest/](https://docs.wpilib.org/en/latest/) and ``/stable/`` is the "year-to-year" version of the docs. This is accessible from [https://docs.wpilib.org/en/stable/](https://docs.wpilib.org/en/stable/)
 
 Beginning of Season:
-- Translation and Documentation ``/latest/`` and ``/stable`` are at an equal point in history. This allows us to make "bleeding" edge changes to documentation and translations. The benefit of this, is making it immediately live on both versions of the site.
+- Translation and Documentation ``/latest/`` and ``/stable`` are at an equal point in history. This allows us to make "leading" edge changes to documentation and translations. The benefit of this, is making it immediately live on both versions of the site.
 
 End of Season:
 - Translations & Documentation have ``stable`` locked for new **content** additions but are able to be translated. ``latest`` is unable to be translated at this time. 
