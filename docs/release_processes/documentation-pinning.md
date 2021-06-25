@@ -1,4 +1,4 @@
-# Documentation & Translation Pinning
+# Documentation Pinning
 
 This document details the process of pinning and versioning the [translation project](https://github.com/wpilibsuite/frc-docs-translations) for the FIRST/WPILib documentation. Pinning the versions of translations is very important for a couple reasons.
 
@@ -22,6 +22,6 @@ End of Season:
 - ``latest`` for the [documentation repo](https://github.com/wpilibsuite/frc-docs) is tagged at a yearly date for archival purposes (IE: 2022).
 
 Mid-Summer:
-- Translations have ``stable`` locked for new **content** and new **translations**. ``latest`` is now available for translation. Translation repo is tagged at a yearly date (IE: 2022).
+- Translations have ``stable`` locked for new **content** and new **translations**. Translations should get locked when language activity on the [transifex project](https://transifex.com/wpilib/frc-docs) is low. ``latest`` is now available for translation. Translation repo is tagged at a yearly date (IE: 2022).
 
 This release cycle ensures that our visitors always get the most relevant and stable documentation. We don't want visitors receiving development changes to documentation for things they are still working on for the current year.
