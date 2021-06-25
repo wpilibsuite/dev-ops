@@ -25,5 +25,3 @@ Mid-Summer:
 - Translations have ``stable`` locked for new **content** and new **translations**. ``latest`` is now available for translation. Translation repo is tagged at a yearly date (IE: 2022).
 
 This release cycle ensures that our visitors always get the most relevant and stable documentation. We don't want visitors receiving development changes to documentation for things they are still working on for the current year.
-
-Last Updated: 6/25/2021
