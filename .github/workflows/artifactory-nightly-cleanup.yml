@@ -2,7 +2,8 @@ name: Artifactory Nightly Cleanup
 
 on:
   workflow_dispatch:
-  schedule: '0 16 * * *'
+  schedule:
+    - cron: '0 16 * * *'
 
 jobs:
   wpilib-mvn-development_unused_cleanup:
