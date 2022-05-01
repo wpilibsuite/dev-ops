@@ -1,0 +1,32 @@
+name: Artifactory Nightly Cleanup
+
+on:
+  workflow_dispatch:
+  schedule: '0 16 * * *'
+
+jobs:
+  wpilib-mvn-development_unused_cleanup:
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'wpilibsuite' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: jfrog/setup-jfrog-cli@v2
+        env:
+          JF_ARTIFACTORY_1: ${{ secrets.ARTIFACTORY_CLI_SECRET }}
+      - name: Cleanup
+        run: jf rt del --spec=aql/wpilib-mvn-development_unused.aql
+
+  wpilib-generic-gradle-cache_unused_cleanup:
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'wpilibsuite' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: jfrog/setup-jfrog-cli@v2
+        env:
+          JF_ARTIFACTORY_1: ${{ secrets.ARTIFACTORY_CLI_SECRET }}
+      - name: Cleanup
+        run: jf rt del --spec=aql/wpilib-generic-gradle-cache_unused.aql
