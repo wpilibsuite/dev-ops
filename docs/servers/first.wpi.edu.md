@@ -14,7 +14,7 @@ To access the files, WPI community members can login via SSH to the linux remote
 
 To continuously update the content of the web server, a task must be executed to periodicity check for file updates. This is very easy because the content is all stored in a git repository on GitHub.
 
-An important note is that the WPI Linux terminal server (linux.wpi.edu) will not always connect you to the same server. As of writing there are 6 servers that are load balanced together. Instead of sshing to linux.wpi.edu, ssh into one of these servers and remember which one! The crontab file is not shared between them. Right now, the crontab is configured on `ccc-app-p-u06.wpi.edu`.
+An important note is that the WPI Linux terminal server (linux.wpi.edu) will not always connect you to the same server. As of writing there are 4 servers that are load balanced together. Instead of sshing to linux.wpi.edu, ssh into one of these servers and remember which one! The crontab file is not shared between them. Right now, the crontab is configured on `ccc-app-p-u04.wpi.edu`.
 
 1. Before configuring the update script, you must complete an initial clone of the content manually. The files must have permissions of 766 in order for the web service to access them. To accomplish this we can set the `core.sharedRepository` configuration option to `umask` on initial clone.
 
