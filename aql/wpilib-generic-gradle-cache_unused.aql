@@ -3,7 +3,7 @@
     {
       "aql": {
         "items.find": {
-          "repo": "wpilib-generic-gradle-cache",
+          "repo": "wpilib-generic-gradlecache",
           "$or":[
             {
                 "stat.downloaded": { "$before":"1mo" }
